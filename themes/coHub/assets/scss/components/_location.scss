@@ -1,0 +1,64 @@
+.location {
+  &-aria {
+    text-align: center;
+    background: #222029;
+    padding: 100px;
+    @include desktop {
+      text-align: center;
+      padding: 50px;
+    }
+    @include mobile {
+      padding: 30px;
+    }
+    @include mobile-xs {
+      padding: 30px 10px;
+    }
+
+    h3 {
+      font-size: 25px;
+      line-height: 38px;
+      font-weight: 300;
+      color: $white;
+    }
+
+    ul {
+      padding: 0;
+      margin: 30px 0;
+
+      li {
+        list-style: none;
+        a {
+          color: $white;
+          line-height: 32px;
+          font-size: 19px;
+          font-weight: 400;
+          text-decoration: underline;
+          font-family: $primary-font;
+        }
+      }
+    }
+
+    p {
+      color: $white;
+      font-weight: 300;
+      line-height: 32px;
+      margin-bottom: 20px;
+
+      @include desktop {
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 20px;
+      }
+
+      @include mobile {
+        width: 100%;
+      }
+    }
+  }
+  &-section {
+    padding: 140px 0 100px 0;
+    @include mobile {
+      padding: 120px 0 50px 0;
+    }
+  }
+}

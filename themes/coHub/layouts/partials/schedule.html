@@ -1,0 +1,28 @@
+<div class="schedule-tbl">
+  <table>
+    <thead>
+      <tr>
+        <th class="schedule-time">Time</th>
+        <th class="schedule-slot" style="padding-left: 30px">Speaker</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{ range .Pages }} {{ if .Params.isTalk }}
+      <tr>
+        <td class="schedule-time">{{ .Params.time }}</td>
+        <td class="schedule-slot">
+          <a href="{{ .Params.link | absURL }}">
+            {{ .Params.name }}
+            <span class="speakers-company">{{ .Params.speaker }}</span>
+          </a>
+        </td>
+      </tr>
+      {{ else }}
+      <tr class="schedule-other">
+        <td class="schedule-time">{{ .Params.time }}</td>
+        <td class="schedule-slot">{{ .Params.name }}</td>
+      </tr>
+      {{ end }} {{ end }}
+    </tbody>
+  </table>
+</div>

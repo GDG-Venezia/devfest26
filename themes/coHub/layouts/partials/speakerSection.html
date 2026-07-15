@@ -1,0 +1,42 @@
+{{with .Site.Data.speakerSection}} {{if .enable}}
+<section class="blog" id="blog">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <h2>Speakers</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      {{ $pages := where $.Site.RegularPages "Type" "speakers" }}
+      {{ range $pages }}
+        {{if .Params.featured }}
+          <div class="col-lg-4 col-md-6">
+            <a href="{{ .Permalink }}">
+              <article class="blog-post">
+                <img src="{{ .Params.photo | absURL }}" alt="blog-images" />
+                <div class="blog-content">
+                  <h3>{{ .Params.name }}</h3>
+                  <p>{{.Params.jobTitle}}</p>
+                  <h3><b> {{.Params.presentation.title }} </b></h3>
+                </div>
+                {{ if or (eq .Params.lang "eng") (eq .Params.lang "workshop - eng") }}
+                  <div class="blog-tip">{{.Params.lang}}</div>
+                {{ else }}
+                  <div class="blog-tip" style="background-color: #ec5c30;">{{.Params.lang}}</div>
+                {{ end }}
+              </article>
+            </a>
+          </div>
+         {{ end }}
+      {{end}}
+      <div class="col-12 text-center">
+        <a href="{{.buttonTarget | absURL}}" class="btn btn-primary"
+          >See all speakers</a
+        >
+      </div>
+    </div>
+  </div>
+</section>
+{{end}} {{end}}

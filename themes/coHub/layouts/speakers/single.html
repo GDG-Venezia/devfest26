@@ -1,0 +1,55 @@
+{{define "main"}}
+<article class="post">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <div class="blog-header">
+          <div class="post-image" style="height: 100%; width: 250px; object-fit: cover; border-radius: 5px 5px 0 0;">
+            <img src="{{ .Params.photo | absURL}}" alt="feature-image" />
+          </div>
+        <div>
+           <div class="post-title">
+              {{ if eq .Params.lang "eng" }}
+                <div class="blog-tip">{{.Params.lang}}</div>
+              {{ else }}
+                <div class="blog-tip" style="background-color: #ec5c30;">{{.Params.lang}}</div>
+              {{ end }}
+             <h2>{{.Params.name }}</h2>
+             <p>{{ .Params.jobTitle }}</p>
+           </div>
+             <div style="overflow: hidden;justify-content:space-around;">
+               {{- if (.Params.twitter) }}
+                 <div style="display: inline-block;margin-right: 10px;">
+                  <a href="{{ .Params.twitter }}" target="BLANK">
+                   <i class="ti-twitter-alt" aria-hidden="true"></i>
+                  </a>
+                 </div>
+               {{- end}}
+               {{- if (.Params.linkedin) }}
+                 <div style="display: inline-block;margin-right: 10px;">
+                   <a href="{{ .Params.linkedin }}" target="BLANK">
+                     <i class="ti-linkedin" aria-hidden="true"></i>
+                   </a>
+                 </div>
+               {{- end}}
+               {{- if (.Params.website) }}
+                 <div style="display: inline-block;margin-right: 10px;">
+                   <a href="{{ .Params.website }}" target="BLANK">
+                     <i class="ti-world" aria-hidden="true"></i>
+                   </a>
+                 </div>
+               {{- end}}
+             </div>
+          </div>
+        </div>
+        <div class="post-body">
+          <h3>{{ .Params.presentation.title }}</h3>
+          <p>{{ .Params.presentation.abstract | safeHTML }}</p>
+          <h3>Speaker Bio:</h3>
+          <p>{{ .Params.bio | safeHTML }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+{{end}}

@@ -1,0 +1,47 @@
+baseURL = 'https://devfest26.gdgvenezia.it/'
+languageCode = 'en'
+theme= "coHub"
+title = 'DevFest Venezia 26'
+
+[pagination]
+  pagerSize = 6
+
+  # Main Menu
+[[menu.Main]]
+name = "Program"
+url= "#program"
+weight = 1
+#[[menu.Main]]
+#name = "CFP"
+#url= "#cfp"
+#weight = 5
+[[menu.Main]]
+name = "Sponsors"
+url= "#sponsor"
+weight = 6
+[[menu.Main]]
+name = "Partners"
+url= "#partner"
+weight = 7
+[[menu.Main]]
+name = "Location"
+url= "#location"
+weight = 8
+#  [[menu.Main]]
+
+[params]
+  description = "DevFest Venezia 2026 - 24 October - Venezia"
+  copyright = "© {year} <a href=\"https://marcogomiero.com/\" target=\"_blank\">Marco Gomiero </a>"
+  googleAnalytics = ""
+  image = "images/logo-full.webp"
+  logo = "images/logo.webp"
+  footerlogo = "images/logo-no-bkg.webp"
+  footerDescription = "Organized by <a href=\"https://gdg.community.dev/gdg-venezia/\" target=\"BLANK\">Google Developer Group Venezia</a>."
+
+  [params.location]
+  title = "Location"
+
+  [params.location.venezia]
+  address = "Campus Scientifico Università Ca' Foscari"
+  desc = "Via Torino, 155 Mestre, Venezia VE, 30170"
+  mapsLink = "https://www.google.com/maps/dir//Via%20Torino%2C%20155%20Mestre%2C%20Venezia%20VE"

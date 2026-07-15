@@ -1,0 +1,12 @@
+---
+enable: false
+title: "Tickets"
+subtitle: >
+          A free ticket is required to access the DevFest. Reserve your spot now.
+itemPrices:
+  - description: >
+                Ticket valid for entry.
+    price: DevFest Venezia 26
+    buttonTarget: "/"
+
+---

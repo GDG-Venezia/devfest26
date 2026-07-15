@@ -1,0 +1,47 @@
+{{define "main"}}
+<!-- <section class="page-title">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>{{.Title}}</h1>
+        <p>Coming soon</p>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<section class="page-title">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>{{.Title}}</h1>
+        <section class="blog">
+          <div class="container">
+            <div class="row">
+              {{ range .Pages }}
+              <div class="col-lg-4">
+                <a href="{{ .Permalink }}">
+                  <article class="blog-post">
+                    <img src="{{ .Params.photo | absURL }}" alt="blog-images" />
+                    <div class="blog-content">
+                      <h3>{{ .Params.name }}</h3>
+                      <p>{{.Params.jobTitle}}</p>
+                      <h3><b> {{.Params.presentation.title }} </b></h3>
+                    </div>
+                    {{ if or (eq .Params.lang "eng") (eq .Params.lang "workshop - eng") }}
+                      <div class="blog-tip">{{.Params.lang}}</div>
+                    {{ else }}
+                     <div class="blog-tip" style="background-color: #ec5c30;">{{.Params.lang}}</div>
+                    {{ end }}
+                  </article>
+                </a>
+              </div>
+              {{end}}
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</section>
+{{end}}

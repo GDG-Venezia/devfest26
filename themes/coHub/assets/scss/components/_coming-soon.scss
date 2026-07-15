@@ -1,0 +1,82 @@
+.coming-soon {
+  padding: 120px 0;
+  overflow: hidden;
+  position: relative;
+  color: $white;
+  background: $text-color-dark;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    border: 44px solid $primary-color;
+    transform: rotate(24deg);
+    opacity: 0.85;
+  }
+
+  &::before {
+    top: -230px;
+    left: -170px;
+  }
+
+  &::after {
+    right: -190px;
+    bottom: -230px;
+    border-color: #ec5c30;
+  }
+
+  &-content {
+    max-width: 850px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+  }
+
+  &-eyebrow {
+    margin-bottom: 18px;
+    color: $primary-color;
+    font-family: $primary-font;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    margin-bottom: 22px;
+    color: $white;
+    font-size: 54px;
+    line-height: 1.08;
+  }
+
+  p {
+    max-width: 650px;
+    margin: 0 auto;
+    color: rgba($white, 0.78);
+    font-size: 19px;
+    line-height: 1.7;
+  }
+
+  @include tablet {
+    padding: 90px 0;
+
+    h2 {
+      font-size: 40px;
+    }
+  }
+
+  @include mobile {
+    padding: 72px 0;
+
+    h2 {
+      font-size: 32px;
+    }
+
+    p {
+      font-size: 17px;
+    }
+  }
+}
