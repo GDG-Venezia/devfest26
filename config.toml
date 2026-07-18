@@ -11,10 +11,10 @@ title = 'DevFest Venezia 26'
 name = "Program"
 url= "#program"
 weight = 1
-#[[menu.Main]]
-#name = "CFP"
-#url= "#cfp"
-#weight = 5
+[[menu.Main]]
+name = "CFP"
+url= "#cfp"
+weight = 2
 [[menu.Main]]
 name = "Sponsors"
 url= "#sponsor"
