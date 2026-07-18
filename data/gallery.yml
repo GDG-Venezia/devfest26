@@ -4,10 +4,10 @@ enable: true
 subtitle: >
         Some pictures from the past editions, to help you decide to join!
 galleryImage:
- - image: "images/past/devfest-veneto1.webp"
- - image: "images/past/devfest-veneto2.webp"
- - image: "images/past/devfest-veneto3.webp"
- - image: "images/past/devfest-veneto8.webp"
- - image: "images/past/devfest-veneto10.webp"
- - image: "images/past/devfest-veneto7.webp"
+ - image: "images/past/devfest-2025-audience.webp"
+ - image: "images/past/devfest-2025-community.webp"
+ - image: "images/past/devfest-2025-arrival.webp"
+ - image: "images/past/devfest-2025-demo.webp"
+ - image: "images/past/devfest-2025-session.webp"
+ - image: "images/past/devfest-2025-conversation.webp"
 ---
