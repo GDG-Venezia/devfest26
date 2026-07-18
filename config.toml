@@ -33,7 +33,6 @@ weight = 8
   description = "DevFest Venezia 2026 - 24 October - Venezia"
   copyright = "© {year} <a href=\"https://marcogomiero.com/\" target=\"_blank\">Marco Gomiero </a>"
   googleAnalytics = ""
-  image = "images/logo-full.webp"
   logo = "images/logo.webp"
   footerLogoEnabled = false
   footerlogo = "images/logo-no-bkg.webp"

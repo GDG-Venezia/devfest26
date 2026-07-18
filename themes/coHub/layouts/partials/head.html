@@ -12,7 +12,9 @@
       content="width=device-width, initial-scale=1, maximum-scale=1"
     />
     <meta name="description" content="{{ .Site.Params.description }}">
+    {{ with .Site.Params.image }}
     <meta name="og:image" content="{{ .Site.Params.image | absURL}}">
+    {{ end }}
     {{ template "_internal/opengraph.html" . }}
     {{ template "_internal/schema.html" . }}
     {{ template "_internal/twitter_cards.html" . }}
