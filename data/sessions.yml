@@ -1,0 +1,30 @@
+---
+# Programme for /agenda/. While `enable` is false (or the list is empty), the agenda,
+# program preview and live bar fall back to data/comingSoon.yml.
+enable: false
+date: "2026-10-24"
+timezone: "Europe/Rome"
+# color: blue | red | yellow | green | ink
+tracks:
+  - name: "Mobile"
+    color: "green"
+  - name: "Web"
+    color: "yellow"
+  - name: "Cloud"
+    color: "blue"
+  - name: "AI/ML"
+    color: "red"
+sessions: []
+# Example session (speakers are file names in content/speakers/, without .md):
+#  - id: "kmp-in-production"
+#    title: "Kotlin Multiplatform in production"
+#    start: "09:45"
+#    end: "10:30"
+#    room: "Aula Alfa"
+#    track: "Mobile"
+#    lang: "ENG"
+#    level: "Intermediate"
+#    speakers: ["jane-doe"]
+#    abstract: >
+#      Markdown allowed.
+---

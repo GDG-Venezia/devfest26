@@ -1,8 +1,21 @@
 ---
 enable: true
 title: "Sponsors"
-partner:
-  - name: "Google"
-    image: "images/sponsors/google.svg"
-    link: "https://developers.google.com/community/gdg"
+# Tiers render in order. size: lg | md | sm controls logo size on /sponsors/.
+# color: blue | red | yellow | green | ink
+tiers:
+  - name: "Main sponsor"
+    color: "yellow"
+    size: "lg"
+    sponsors:
+      - name: "Google"
+        image: "images/sponsors/google.svg"
+        link: "https://developers.google.com/community/gdg"
+# "Become a sponsor" band on /sponsors/. Enable once there is a contact address or sponsor kit link.
+cta:
+  enable: false
+  title: "Become a sponsor"
+  subtitle: "Meet 500+ developers at your booth, hire, and support the local tech community."
+  buttonLabel: "Get in touch"
+  buttonTarget: ""
 ---

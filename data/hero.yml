@@ -1,7 +1,8 @@
 ---
-title : "<h1>DevFest Venezia 2026</h1>"
 enable: true
+eyebrow: "Saturday 24 October 2026"
+title: "DevFest<br>Venezia"
 subtitle: >
-        DevFest is back in Venice.<br><b>Venezia - 24 October 2026</b>
-heroBGimg: "/images/past/devfest-2025-arrival.webp"
+        The annual community conference of GDG Venezia. One day, multiple tracks and 500+ developers
+        at the Campus Scientifico of Università Ca' Foscari, Mestre.
 ---

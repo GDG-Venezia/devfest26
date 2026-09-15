@@ -1,0 +1,39 @@
+---
+columns:
+  - title: "Event"
+    links:
+      - label: "Agenda"
+        url: "/agenda/"
+      - label: "Speakers"
+        url: "/speakers/"
+      - label: "Venue & travel"
+        url: "/#venue"
+  - title: "Take part"
+    links:
+      - label: "Call for papers"
+        url: "https://sessionize.com/devfest-venezia-2026"
+      - label: "Sponsors"
+        url: "/#sponsors"
+      - label: "Community guidelines"
+        url: "https://developers.google.com/community-guidelines"
+  - title: "Community"
+    links:
+      - label: "GDG Venezia"
+        url: "https://gdg.community.dev/gdg-venezia/"
+      - label: "Past editions"
+        url: "/gallery/"
+# From the GDG Venezia community page (gdg.community.dev/gdg-venezia).
+socials:
+  - label: "LinkedIn"
+    url: "https://www.linkedin.com/company/gdgvenezia/"
+  - label: "Instagram"
+    url: "https://www.instagram.com/gdg_venezia"
+  - label: "Telegram"
+    url: "https://t.me/gdg_venezia"
+  - label: "YouTube"
+    url: "https://www.youtube.com/channel/UCnXHsg8plcHc_NuCETV2k6Q"
+  - label: "Facebook"
+    url: "https://www.facebook.com/gdgvenezia"
+  - label: "X"
+    url: "https://x.com/gdgvenezia"
+---

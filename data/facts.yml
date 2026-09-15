@@ -1,0 +1,12 @@
+---
+enable: true
+facts:
+  - label: "Date"
+    value: "Sat 24 Oct 2026"
+  - label: "Where"
+    value: "Ca' Foscari, Mestre"
+  - label: "Tickets"
+    value: "Free — registration required"
+  - label: "Scale"
+    value: "500+ attendees · 3+ tracks"
+---

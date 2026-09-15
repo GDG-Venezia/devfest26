@@ -5,9 +5,36 @@ subtitle: >
         Some pictures from the past editions, to help you decide to join!
 galleryImage:
  - image: "images/past/devfest-2025-audience.webp"
+   alt: "Audience during a session — 2025"
  - image: "images/past/devfest-2025-community.webp"
+   alt: "Community moments — 2025"
  - image: "images/past/devfest-2025-arrival.webp"
+   alt: "Arrival and registration — 2025"
  - image: "images/past/devfest-2025-demo.webp"
+   alt: "Live demo — 2025"
  - image: "images/past/devfest-2025-session.webp"
+   alt: "Talk in progress — 2025"
  - image: "images/past/devfest-2025-conversation.webp"
+   alt: "Hallway conversations — 2025"
+albums:
+ - year: 2025
+   website: "https://devfest25.gdgvenezia.it/"
+   url: "https://photos.app.goo.gl/1CvC1bC3aX8kfaRm9"
+   cover: "images/past/devfest-2025-audience.webp"
+ - year: 2024
+   website: "https://devfest24.gdgvenezia.it/"
+   url: "https://photos.app.goo.gl/DDSDd4k412FdvgMb7"
+ - year: 2023
+   website: "https://devfest23.gdgvenezia.it/"
+   url: "https://photos.app.goo.gl/8dY9mMwxpS86KSt36"
+ - year: 2022
+   url: "https://photos.app.goo.gl/qcuNJpT4ygaTmiSN9"
+ - year: 2019
+   website: "https://devfest19.gdgvenezia.it/"
+   url: "https://photos.app.goo.gl/R2yM5W92grrh4UdX7"
+ - year: 2018
+   website: "https://devfest18.gdgvenezia.it/"
+   url: "https://photos.app.goo.gl/VWCAj5r27NBj74SB7"
+ - year: 2017
+   url: "https://photos.app.goo.gl/i1k3xOYDkgdikyo32"
 ---

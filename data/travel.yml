@@ -1,0 +1,22 @@
+---
+# Checked September 2026: walking times from OpenStreetMap routes; Porto Marghera from RFI/Trenitalia;
+# bus stop name from the ACTV line 43 timetable and the CNR ISP directions page (same campus).
+enable: true
+modes:
+  - mode: "Closest station"
+    color: "green"
+    headline: "Venezia Porto Marghera, 15 min on foot"
+    detail: "About 1 km from the campus. It's a small stop between Mestre and Venezia Santa Lucia and only some regional trains call there, so check that yours does."
+  - mode: "Main station"
+    color: "blue"
+    headline: "Venezia Mestre, 30 min on foot or a short bus ride"
+    detail: "About 2.2 km away and served by every train. Urban buses go from the station to the \"Torino Università\" stop in front of the campus."
+  - mode: "By bus"
+    color: "yellow"
+    headline: "ACTV buses to \"Torino Università\""
+    detail: "Check routes, times and tickets in the AVM Venezia app: Saturday timetables can differ from weekdays."
+  - mode: "By car"
+    color: "red"
+    headline: "Close to the Mestre ring road"
+    detail: "Via Torino is a few minutes from the Tangenziale di Mestre. Parking near the campus is limited, so arrive early or consider public transport."
+---
