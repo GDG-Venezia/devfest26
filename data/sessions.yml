@@ -7,6 +7,18 @@ enable: true
 date: "2026-10-24"
 timezone: "Europe/Rome"
 sessions:
+  - id: "keep-your-policies-close-and-your-rules-closer"
+    title: "Keep your policies close, and your rules closer: evaluate your repositories without tokens"
+    format: "Session"
+    lang: "ENG"
+    speakers: [ceren-ozgur]
+    abstract: |-
+      As software projects grow, a familiar question emerges: how do you make hundreds of repositories follow the same rules without turning your governance tool into an increasingly large pile of "if" statements? If this sounds familiar, you're not alone. Teams often find themselves patching scripts together or struggling to ensure consistent enforcement of rules. What if the rules themselves could be written, versioned and tested like the code they oversee?
+
+      During my internship at Aton, I explored this approach using Open Policy Agent (OPA), a CNCF graduated project, to implement a "Policy as Code" tool. I'll show you how OPA can be used in such a scenario, how rules in OPA's Rego Language are easy to write and quick to evaluate, and how they can be run in several different environments: inside the native server, or compiled in portable WebAssembly modules.
+
+      Taking this idea one step further we'll explore what happens when these portable policies move closer to the application itself and enter the JVM: our rules can then call the JVM code much like an LLM calls MCP tools; but without tokens involved, and with a predictable result on every run.
+
   - id: "ai-native-web-development-hands-on"
     title: "AI-Native Web Development, Hands-On"
     format: "Workshop"
