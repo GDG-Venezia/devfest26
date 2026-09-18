@@ -10,8 +10,8 @@ columns:
         url: "/#venue"
   - title: "Take part"
     links:
-      - label: "Call for papers"
-        url: "https://sessionize.com/devfest-venezia-2026"
+      - label: "Follow us"
+        url: "/follow/"
       - label: "Sponsors"
         url: "/#sponsors"
       - label: "Community guidelines"
@@ -32,8 +32,6 @@ socials:
     url: "https://t.me/gdg_venezia"
   - label: "YouTube"
     url: "https://www.youtube.com/channel/UCnXHsg8plcHc_NuCETV2k6Q"
-  - label: "Facebook"
-    url: "https://www.facebook.com/gdgvenezia"
   - label: "X"
     url: "https://x.com/gdgvenezia"
 ---

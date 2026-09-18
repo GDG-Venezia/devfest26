@@ -1,0 +1,23 @@
+---
+# Channels shown on the /follow/ page (theme ships the page). No subtitle:
+# the page works with just the channel cards.
+channels:
+  - label: "GDG Venezia community"
+    url: "https://gdg.community.dev/gdg-venezia/"
+    description: "The GDG Venezia chapter page."
+  - label: "LinkedIn"
+    url: "https://www.linkedin.com/company/gdgvenezia/"
+    description: "Event announcements."
+  - label: "Telegram"
+    url: "https://t.me/gdg_venezia"
+    description: "Quick updates."
+  - label: "Instagram"
+    url: "https://www.instagram.com/gdg_venezia"
+    description: "Behind the scenes."
+  - label: "YouTube"
+    url: "https://www.youtube.com/channel/UCnXHsg8plcHc_NuCETV2k6Q"
+    description: "Talk recordings."
+  - label: "X"
+    url: "https://x.com/gdgvenezia"
+    description: "Short updates."
+---

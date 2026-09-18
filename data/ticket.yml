@@ -1,5 +1,8 @@
 ---
+# Tickets are not ready yet (~October 2026): `soon` shows a "Tickets open soon"
+# CTA pointing to /follow/ instead. Flip `enable` to true when sales open.
 enable: false
+soon: true
 title: "Tickets"
 subtitle: >
           A free ticket is required to access the DevFest. Reserve your spot now.
