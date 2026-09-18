@@ -1,30 +1,303 @@
 ---
-# Programme for /agenda/. While `enable` is false (or the list is empty), the agenda,
-# program preview and live bar fall back to data/comingSoon.yml.
-enable: false
+# Programme for /agenda/. Sessions are announced below while the schedule (times,
+# rooms) is still being finalised: without `start`/`end` they appear on the agenda,
+# talk pages and speaker pages, but not in the timetable or live bar.
+# No track categories: sessions will only get times and room names once decided.
+enable: true
 date: "2026-10-24"
 timezone: "Europe/Rome"
-# color: blue | red | yellow | green | ink
-tracks:
-  - name: "Mobile"
-    color: "green"
-  - name: "Web"
-    color: "yellow"
-  - name: "Cloud"
-    color: "blue"
-  - name: "AI/ML"
-    color: "red"
-sessions: []
-# Example session (speakers are file names in content/speakers/, without .md):
-#  - id: "kmp-in-production"
-#    title: "Kotlin Multiplatform in production"
-#    start: "09:45"
-#    end: "10:30"
-#    room: "Aula Alfa"
-#    track: "Mobile"
-#    lang: "ENG"
-#    level: "Intermediate"
-#    speakers: ["jane-doe"]
-#    abstract: >
-#      Markdown allowed.
----
+sessions:
+  - id: "ai-native-web-development-hands-on"
+    title: "AI-Native Web Development, Hands-On"
+    format: "Workshop"
+    lang: "ENG"
+    speakers: [fabian-krumbholz]
+    abstract: |-
+      The way we build for the web just changed: AI no longer only autocompletes code — it builds a real page, runs it in the browser, tests it, and fixes its own mistakes. In this fully hands-on session you'll experience that shift firsthand, going from a blank screen to a modern web page you designed and shipped live, all in one sitting. Whether you're a student making your first real project or a professional modernising how you work, you'll leave with something real online and a way of building you can put to use the very next day.
+  - id: "notebooklm-come-finalmente-leggere-le-specifiche"
+    title: "NotebookLM, come (finalmente) leggere le specifiche di progetto"
+    format: "Session"
+    lang: "ITA"
+    speakers: [giorgio-basile]
+    abstract: |-
+      A tutti, compreso io, non piace leggere le specifiche di progetto, chiamate in gergo SP. Da questo odio, ho scoperto notebookLm, uno strumento di mamma Google molto utile per riassumere e comunicare il contenuto di uno o piu documenti. In questo talk voglio portarvi le mie considerazioni in merito a questo tool AI
+  - id: "show-me-the-money"
+    title: "Show me the money"
+    format: "Session"
+    lang: "ENG"
+    speakers: [ivan-morgillo]
+    abstract: |-
+      Last month, forty-six people installed my bedtime-story app. Twenty-five listened to a story until the end. Thirteen reached the paywall. Zero tapped it. Every event fired, every screen rendered, the billing integration was perfect — and the app earned nothing.
+
+      I ship twelve apps on my own, on Android and iOS, plus the websites and pipelines that feed them. No team. One of them has over a million installs and used to pay for ninety percent of everything I earned; last month it was barely half, and that shift is most of this talk.
+
+      This is the field report, with my real dashboards: the ad format I refused for a year that turned out to be sixty percent of my revenue, the app where impressions fell forty-one percent and earnings rose fifty, the two mediation networks that took forty-five percent of my ad requests and returned two point six percent of the money, and the one text file whose typo removed thirty percent of my income overnight.
+
+      We go through AdMob formats and mediation, subscriptions with RevenueCat and the store pricing traps that cost me months, and the part most developers skip — store listings, the app website, and a bot that posts every day — because an ad unit with no users pays exactly zero.
+
+      The conclusion is the uncomfortable one: monetization made my apps better. You cannot get paid by users who never come back, so the money is what forced me to fix onboarding, startup time and retention. And when you are one person with twelve apps, revenue is the only honest signal for which one deserves your next hour.
+  - id: "agentic-ui-ai-running-in-the-frontend"
+    title: "Agentic UI: AI running in the Frontend"
+    format: "Session"
+    lang: "ENG"
+    speakers: [rainer-hahnekamp]
+    abstract: |-
+      As chatbots increasingly generate adaptive UI snippets, are traditional frontends becoming obsolete?
+
+      Not really. There are UIs where the user experience should be defined deterministically, or certain workflows have to be followed. AI can then change only specific UI areas dynamically to improve efficiency and customize to the user's needs. That is what we call Agentic UI.
+
+      This talk breaks down the mechanics of Agentic UI. We cover existing standards like AG-UI, A2UI, and MCP Apps. We will review the essential tools and frameworks behind this evolution and hear about real-world takeaways from putting these concepts into production.
+  - id: "introduction-to-cloud-computing"
+    title: "Introduction to Cloud Computing"
+    format: "Session"
+    lang: "ITA"
+    speakers: [luca-raveri]
+    abstract: |-
+      Building software today goes beyond writing lines of code on your computer: it also means designing and deploying an application, making it available to users, protecting its data, managing traffic, and controlling costs.
+
+      In this talk, we will cover the fundamental concepts of cloud computing: the pay-as-you-go model and the principles of scalability, elasticity, and resilience, which help keep an application available during traffic spikes or failures while optimizing its costs.
+
+      This talk is aimed at students and developers at the beginning of their journey and requires no prior experience with AWS, Google Cloud, or Azure. We will look at how to start navigating the cloud space and discuss certifications, personal projects, and career opportunities to understand how to build a career in cloud.
+  - id: "russian-dolls-of-ai-llm-rag-agents-and-how-we-know"
+    title: "Russian Dolls of AI: LLM, RAG, Agents, and How We Know They Work"
+    format: "Session"
+    lang: "ENG"
+    speakers: [nejmeddine-ben-ouarred]
+    abstract: |-
+      LLM, RAG, agent, multi-agent system. Four terms we throw around as if they named four rival technologies. They actually name four Russian dolls: each one contains the previous one, and adds a single new piece.
+
+      We'll open them one at a time. At every level, two questions: what does this new piece make possible that wasn't before, and how do we know it's doing its job?
+
+      Because the answer to that second question changes completely from one level to the next, and that's usually where projects stumble.
+
+      You'll leave with a map: where your own system sits, what separates it from the level below, and what to look at to check it delivers what it promises. Without necessarily needing the biggest doll.
+  - id: "rust-why-how-and-when-a-real-world-case-study"
+    title: "Rust: why, how and when. A real world case study"
+    format: "Session"
+    lang: "ITA"
+    speakers: [marco-biondo, leonardo-gazzola]
+    abstract: |-
+      Rust is a systems programming language focused on building fast, reliable software by preventing memory and concurrency bugs at compile time, without a garbage collector. This makes it well-suited for performance-sensitive and resource-constrained environments like backend services, edge systems, and embedded applications.
+
+      Its core model is based on ownership and borrowing, which may feel unfamiliar at first but enables the compiler to enforce strong safety guarantees. We’ll use small examples to show how these concepts translate into practical, real-world reliability.
+
+      Beyond the language features, the talk focuses on a practical question: when does Rust actually make sense in production? We’ll discuss where it provides clear benefits, where it may introduce friction, and how to evaluate the trade-offs for a given use case.
+
+      To ground the discussion, we’ll present a real-world industrial IoT scenario where Rust was used to build a data validator, highlighting the motivations and outcomes in terms of performance, stability, and operational footprint.
+
+      The goal is to provide a realistic mental model for evaluating Rust as a deliberate engineering choice rather than a hype-driven decision.
+  - id: "close-enough-the-shortcuts-behind-systems-at-scale"
+    title: "Close Enough: The Shortcuts Behind Systems at Scale"
+    format: "Session"
+    lang: "ENG"
+    speakers: [alessia-bragagnolo]
+    abstract: |-
+      Large-scale systems constantly need to answer questions like "have I seen this before?" or "how many unique things are there?" — at a scale where exact answers are too slow or too expensive to compute. The trick these systems use is deceptively simple: trade a small, known error rate for massive gains in speed and memory.
+
+      This talk is a beginner-friendly introduction to probabilistic data structures, built around 3 of core problems they solve — membership testing, duplicate detection, cardinality estimation, frequency estimation, nearest-neighbor search, and random projections. Rather than starting from theory, we'll start from something every developer already knows (the hash map) and build up from there, with plain-language analogies for each structure.
+  - id: "building-interoperable-agents-when-a2a-meets-mcp"
+    title: "Building Interoperable Agents: When A2A meets MCP"
+    format: "Session"
+    lang: "ENG"
+    speakers: [luiz-carneiro]
+    abstract: |-
+      It is time to move from isolated chatbots to ecosystems of collaborating agents. But how do we ensure agents can talk to each other without building proprietary silos?
+
+      In this session, we will break down a multi-agent AI system that uses two powerful open standards recently donated to the Linux Foundation: the Agent-to-Agent (A2A) protocol and the Model Context Protocol (MCP).
+
+      We will start with a live demo of a deployed multi agent system, where an orchestrator coordinates the collaboration of multiple agents using A2A, while some of those agents share an MCP server. After the demo, we will deconstruct the system architecture. While explaining these Apache 2.0 licensed protocols, we will walk through the engineering process to rebuild the presented agentic system from scratch.
+
+      Join to see how A2A and MCP work hand in hand to create an Agentic-AI platform!
+
+      Deployed app: https://www.carneiro.dev/ducktaipe
+      GitHub: https://github.com/carneiroDotDev/ducktAIpe
+
+      Previous events where this talk was presented:
+      - Google Cloud Summit 2026 - https://cloudonair.withgoogle.com/events/google-cloud-summit-dach-2026/speakers#
+      - FOST apidays Munich 2026 - https://apidays.global/fost-events/munich
+      - Google Cloud Builders Day Berlin 2026 - https://cloud.google.com/events/builders-day-berlin?hl=de
+      - AI Poland 2025 - https://ai-poland.pl/speaker/2025/luiz-carneiro
+  - id: "decoding-cultural-bugs-lessons-from-my-remote"
+    title: "Decoding cultural “bugs”: lessons from my remote Europe–India team"
+    format: "Session"
+    lang: "ENG"
+    speakers: [giulia-scalaberni]
+    abstract: |-
+      Working in international teams, what seems like a “bug” is often a cultural default.
+
+      Using Erin Meyer’s Culture Map, I’ll explore key cultural dimensions - communication styles, feedback, leadership, decision-making and trust - and how they shape collaboration.
+
+      Drawing from my experience leading a fully remote, cross-cultural IT team spanning Europe and India, I’ll show practical ways to decode “strange” behaviours, adapt team practices and improve clarity and trust without asking anyone to change who they are.
+  - id: "neuralizzatore-android-arduino"
+    title: "Costruisci il tuo Neuralizzatore: Android e Arduino per un'arma segreta"
+    format: "Session"
+    lang: "ITA"
+    speakers: [daniele-bonaldo]
+    abstract: |-
+      Come agenti dei Men in Black, ci troviamo di fronte a una sfida quotidiana: proteggere il mondo da minacce aliene, e le menti umane da ricordi che non dovrebbero avere. Questo talk è una dimostrazione pratica di come unire elettronica e software per creare un "neuralizzatore" pienamente funzionante*.
+
+      Vedremo inizialmente come assemblare e programmare l'elettronica per controllare luci e colori tramite Arduino.
+      Creeremo poi un applicazione Android in Jetpack Compose per controllare il nostro dispositivo via Bluetooth. Il design dell'interfaccia sarà ovviamente responsivo e adattabile ai display di qualsiasi razza aliena collabori con MIB.
+
+      Infine vedremo come modellare e stampare in 3D il prototipo fisico del nostro strumento. Questo talk ti guiderà attraverso tutte le fasi di un progetto full-stack: dall'elettronica alla programmazione, fino alla prototipazione hardware, mostrandoti che con gli strumenti giusti si possono creare gadget degni di un agente segreto.
+
+      *potrebbe cancellare solo parzialmente la memoria.
+  - id: "antigravity-cli-use-your-ai-in-cli-for-maximum"
+    title: "Antigravity CLI: Use your AI in CLI for maximum control and effectiveness"
+    format: "Workshop"
+    lang: "ENG"
+    speakers: [ankur-roy]
+    abstract: |-
+      The command line has been the bastion of developers and architects since the dawn of terminals in computers (so forever). A CLI usage of AI is the best compromise between the actions an AI agent can take and the inclusion of the human in the loop. In this workshop you will learn how to optimally use the Antigravity CLI and will leave you with insights on how to explore it even further.
+  - id: "when-software-stops-being-deterministic-rethinking"
+    title: "When Software Stops Being Deterministic: Rethinking Engineering Practices for AI-Native Systems"
+    format: "Session"
+    lang: "ENG"
+    speakers: [susanna-wong]
+    abstract: |-
+      For decades, we've built software around a simple assumption: the same input produces the same output. If behavior changes, we can usually trace it back to a code change. We write tests, review diffs, deploy to staging, and rely on CI because software is fundamentally deterministic.
+
+      LLM systems break that assumption.
+
+      As you build with language models, behavior increasingly emerges from the interaction between prompts, retrieval, context, model choice, and evaluation—not just the application code itself. Features can regress without a single line of business logic changing. A prompt tweak fixes one failure mode while introducing another. The engineering instincts that served us well for years don't disappear, but many of them stop being sufficient.
+
+      This talk is about what that transition has actually looked like while building agentic systems at Typeform.
+
+      Rather than presenting a polished architecture or a success story, I'll walk through real features we're building today - including the trade-offs, dead ends, and problems we still haven't solved. Each example highlights an engineering habit I had to rethink.
+
+      I'll cover four practices that have become essential: continuous evaluation instead of relying on traditional test suites, trace-level observability instead of application logs alone, reviewing prompts and other AI artifacts as first-class engineering assets, and orchestrating systems whose components are inherently non-deterministic.
+
+      The goal isn't to convince you that AI changes everything. It's to show which engineering principles still hold, which ones need to evolve, and the practical patterns we've found useful along the way.
+
+      If you're already building LLM applications - or are about to start-this talk aims to save you from having to unlearn some of those lessons the hard way.
+  - id: "parla-con-toborino-controllare-un-micro-robot-con"
+    title: "Parla con Toborino: controllare un micro-robot con il linguaggio naturale"
+    format: "Session"
+    lang: "ITA"
+    speakers: [soumaya-erradi]
+    abstract: |-
+      Toborino è un piccolo robot su ruote costruito con Arduino, sensori e componenti elettronici. Può muoversi, rilevare ostacoli, fermarsi in caso di emergenza e comunicare con una dashboard web in tempo reale.
+      In questo talk vedremo come aggiungere una nuova modalità di controllo tramite linguaggio naturale: comandi come “vai avanti lentamente”, “esplora la stanza” o “fermati se trovi un ostacolo” vengono trasformati da un LLM in azioni strutturate, validate e poi inviate al robot.
+      L’obiettivo non è lasciare il controllo libero all’AI, ma usare il linguaggio naturale come interfaccia, mantenendo sicurezza, regole chiare e comportamento prevedibile.
+  - id: "l-ia-che-usa-la-tua-app-al-posto-tuo-testing"
+    title: "L'IA che usa la tua app al posto tuo: Testing Agentico su Mobile"
+    format: "Session"
+    lang: "ITA"
+    speakers: [gabriel-palmisano]
+    abstract: |-
+      Scrivere test di UI su mobile spesso significa combattere con setup complessi, selettori fragili e manutenzione continua. E se, invece di scrivere codice di test, potessi semplicemente dire all'app cosa fare?
+
+      Il Testing Agentico permette a un agente IA di collegarsi a un'app in esecuzione, esplorarla come farebbe un utente reale e verificarne il comportamento seguendo istruzioni in linguaggio naturale. Non si limita a osservare lo schermo: sa anche quali elementi dell'interfaccia sono presenti, quali sono interagibili e come usarli.
+
+      In questo talk vedremo un agente all'opera su un'app mobile reale: eseguirà tap, scroll e input, interpreterà ciò che accade sullo schermo e controllerà che il risultato sia quello atteso, utilizzando strumenti open source come Marionette MCP.
+
+      Parleremo anche dei limiti di questo approccio. Quando ha senso affidarsi a un agente? Cosa può fare meglio dei test tradizionali e cosa, invece, continuerà a richiedere assertion deterministiche e test scritti a mano?
+
+      Attraverso una demo live costruiremo un flusso di testing agentico in pochi minuti e vedremo come questa nuova classe di strumenti possa affiancare, non sostituire, la strategia di testing di un'app mobile.
+      Smetti di combattere con i test. Inizia a parlare con la tua app.
+  - id: "a-web-for-anyone-anywhere-anytime"
+    title: "A web for anyone, anywhere, anytime"
+    format: "Session"
+    lang: "ENG"
+    speakers: [rowdy-rabouw]
+    abstract: |-
+      The web is designed to be accessible by default, but we developers made a mess of it along the way. We exclude a large group of people, while the web is an intrinsic part of our daily lives.
+
+      In this talk, we will look at common mistakes and see solutions to improve your website for people with disabilities by using semantic HTML and ARIA attributes. We will also discuss practical examples of how to make websites more enjoyable and usable for every user.
+  - id: "ai-please-stop-guessing-a-k-a-chrome-devtools-mcp"
+    title: "AI, Please Stop Guessing a.k.a. Chrome DevTools MCP"
+    format: "Session"
+    lang: "ENG"
+    speakers: [dominika-zajac]
+    abstract: |-
+      AI is great at generating code, but terrible at understanding what’s actually happening inside your browser. We still copy-paste logs, screenshots, and half-formed thoughts into chat windows and hope for the best. Model Context Protocol (MCP) fixes this by letting AI consume real, structured context directly from Chrome DevTools. Instead of guessing, AI can see network requests, performance traces, console output, and runtime state — just like a human developer. This talk introduces MCP without the buzzwords and shows why DevTools are the perfect place for it. We’ll walk through concrete debugging and performance scenarios where MCP turns AI into a collaborative partner, not an autocomplete engine. Expect nerdy details, practical demos, and a few “why didn’t we have this earlier?” moments.
+  - id: "la-code-coverage-e-l-illusione-della-sicurezza"
+    title: "La Code Coverage e l'illusione della sicurezza"
+    format: "Session"
+    lang: "ITA"
+    speakers: [davide-bellone]
+    abstract: |-
+      Siamo sicuri che raggiungere il 100% di Code Coverage possa assicurarti di non avere bug nel progetto? Certo che no!
+
+      Se il tuo team punta a raggiungere il 100% di Code Coverage tramite unit test solo per vedere quel bel numero, questa sessione fa per te!
+
+      In questa sessione vedremo:
+
+      - cos'è la Code Coverage, e quali benefici porta avere una buona percentuale di Coverage;
+      - come generare report di Code Coverage in Visual Studio (con esempi in C#);
+      - perché NON dovresti puntare ciecamente al 100% di Code Coverage;
+      - com'è possibile avere il 100% di Code Coverage ed avere comunque un software inaffidabile;
+      -come creare test che portino effettivo vantaggio;
+      - Testing Pyramid vs Testing Diamond;
+      - come creare Integration Tests con NUnit;
+
+      I partecipanti impareranno, tramite esempi pratici, perché il solo fatto di raggiungere il 100% di Code Coverage non rende automaticamente il loro sistema più affidabile.
+
+      E che, come si dice, "quality over quantity"!
+  - id: "api-archaeology-working-with-apis-you-dont"
+    title: "API Archaeology: Working with APIs You Don’t Understand (Yet)"
+    format: "Session"
+    lang: "ENG"
+    speakers: [matteo-valerio]
+    abstract: |-
+      Most developers love building new APIs. Far fewer know how to work with existing ones, especially when documentation is missing, behavior is unclear, and the original authors are no longer around.
+
+      This talk explores a real-world approach to “API archaeology”: the process of reconstructing, validating, and safely evolving existing APIs without full context.
+
+      We’ll cover practical techniques to:
+
+      - Reverse-engineer API behavior from real usage
+      - Validate assumptions through testing and observation
+      - Identify risks before making changes
+      - Introduce structure without breaking existing consumers
+
+      This is not about clean design from scratch — it’s about making sense of what’s already there.
+  - id: "the-mystery-of-the-slow-api-finding-production"
+    title: "The mystery of the slow API (finding production bottlenecks in real time)"
+    format: "Workshop"
+    lang: "ENG"
+    speakers: [israel-blancas]
+    abstract: |-
+      A user reports that clicking a button takes 8 seconds. Your CPU usage is fine, your database metrics look normal, and your server logs just say "200 OK". How do you find the bottleneck without wasting hours guessing or littering your codebase with print statements?
+
+      In this interactive, hands-on workshop, you will step into the shoes of an engineer investigating a slow multi-service application. Starting with a broken codebase running in Docker, you will learn how to:
+      1. Spin up a local observability stack using OpenTelemetry and Docker Compose.
+      2. Auto-instrument microservices without intrusive code refactoring.
+      3. Trace requests across HTTP boundaries to uncover hidden latency in Jaeger.
+      4. Add custom context and error attributes to pinpoint root causes fast.
+
+      By the end of this session, you will walk away with a functional local OpenTelemetry setup and a GitHub template repository you can adapt for your own projects.
+  - id: "ai-driven-community"
+    title: "AI driven community"
+    format: "Session"
+    lang: "ENG"
+    speakers: [tarik-huber]
+    abstract: |-
+      I explain how we manage and run our Bosnian Community in Germany completely with AI tools. From our management & payment system, automated community building, live translations up to our selfmade community Whatsapp AI bot. The most anoying work in a commiunity is managed by our AI tools so we can focus on the importand work and is the people. A great example how AI gives us more time to focus on the work we love to do and not just takes jobs away.
+
+      You can decied how deep we go with the tehnical details. From wiring the building unifi system with our membership and payment application, the Whatsapp bot having the possibility to turn on and setup AC, heating and light up to becomming a new member over the bot, removing membership, adding image of your face for the face detection entrance and so much more...
+  - id: "a-million-cars-are-talking-flink-is-listening"
+    title: "A Million Cars Are Talking. Flink Is Listening."
+    format: "Session"
+    lang: "ITA"
+    speakers: [daniele-de-marchi, daniel-chenet]
+    abstract: |-
+      Targa Telematics sviluppa piattaforme IoT per la mobilità connessa: fleet management, telematica assicurativa e carsharing, su un milione di veicoli in Europa e non solo.
+
+      Un milione di veicoli connessi genera migliaia di eventi di telemetria al secondo: posizioni, accensioni, diagnostica. I dati arrivano in ritardo, fuori ordine e a burst, quando un veicolo torna online. In questo talk vediamo come usiamo Apache Flink in Targa Telematics per trasformare questo flusso di dati in realtime. Parleremo di stateful stream processing, di come si gestisce il tempo negli stream, di scaling e di casi reali come il rilevamento dei rifornimenti, implementato come computazione continua.
+  - id: "paths-polygons-and-donuts-building-a-freehand"
+    title: "Paths, Polygons, and Donuts - Building a Freehand Drawing Tool for Maps"
+    format: "Session"
+    lang: "ENG"
+    speakers: [istvan-juhos]
+    abstract: |-
+      At Spoke, we build last-mile delivery tools for drivers, dispatchers, and retailers. One of our features lets drivers guide our route optimizer by grouping and ordering their stops with freehand lassoing. The first drawing tool only supported creating and undoing groups. Our users needed more control, so we built them a proper polygon editor.
+
+      In this talk, I'll share how finger-drags can become polygons on a map, and we'll dive into the tricky bits of editing them: self-intersecting loops, polygons with holes, and the machinery that decides which stops belong to a group. I'll cover finicky edge cases we caught, fixed, and screenshot-tested before release. There will be donuts!
+
+      By the end of the talk, you'll have a better grasp on:
+
+      - Turning freehand drawings into map polygons with Path and Path.Op
+      - How fill rules make or break boolean path operations
+      - Verifying drawing and grouping logic with screenshot tests
+      - How the same feature looks on iOS and why we stayed native for now
