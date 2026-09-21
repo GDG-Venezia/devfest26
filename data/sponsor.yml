@@ -11,6 +11,25 @@ tiers:
       - name: "Google"
         image: "images/sponsors/google.svg"
         link: "https://developers.google.com/community/gdg"
+  - name: "Sponsors"
+    color: "blue"
+    size: "md"
+    sponsors:
+      - name: "NTT DATA"
+        image: "images/sponsors/nttdata.png"
+        link: "sponsors/nttdata"
+      - name: "Arsenalia"
+        image: "images/sponsors/arsenalia.png"
+        link: "sponsors/arsenalia"
+      - name: "De' Longhi Group"
+        image: "images/sponsors/delonghi.png"
+        link: "sponsors/delonghi"
+      - name: "Vimar SpA"
+        image: "images/sponsors/vimar.jpg"
+        link: "sponsors/vimar"
+      - name: "ERGON INFORMATICA SRL"
+        image: "images/sponsors/ergon.png"
+        link: "sponsors/ergon"
 # "Become a sponsor" band on /sponsors/. Enable once there is a contact address or sponsor kit link.
 cta:
   enable: false
