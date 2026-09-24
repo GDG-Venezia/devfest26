@@ -313,3 +313,29 @@ sessions:
       - How fill rules make or break boolean path operations
       - Verifying drawing and grouping logic with screenshot tests
       - How the same feature looks on iOS and why we stayed native for now
+  - id: "your-next-user-is-an-ai-agent"
+    title: "Your Next User Is an AI Agent"
+    format: "Session"
+    lang: "ITA"
+    speakers: [luca-del-puppo]
+    abstract: |-
+      We usually design web applications with a single user in mind, that is, the person who is using the screen.
+
+      Users read the page, click on the buttons, complete the forms, and make their decisions. Yet what if the software took on some of these tasks for them?
+
+      We shall examine in this talk how agents are able to operate in the browser, interact with applications, and make use of the features that we provide. The agent loop, browser tools, and WebMCP will all be covered, with practical examples given in TypeScript.
+
+      We shall also discuss the questions that arise following the demo, for example those concerning what actions the agents should be permitted to take, when it is necessary for users to remain in control, and how to verify that everything has worked as expected.
+
+      The internet remains familiar, but there is now a new type of user to take into account.
+  - id: "agentic-apps-with-gemini-and-flutter"
+    title: "Agentic apps with Gemini and Flutter"
+    format: "Session"
+    lang: "ENG"
+    speakers: [alfredo-bautista-santos]
+    abstract: |-
+      The future of application interaction is already here, and it's defined by one word: agents.
+
+      In this talk, we will explore the next generation of user experiences through "agentic apps." We will discover how to elevate the UX of our applications to the next level using the power of Generative AI, AI Agents, and the tools available in the Flutter ecosystem.
+
+      Get ready for a session that will change the way you think about software interaction, where we'll see how Gemini can empower your apps to be more intelligent, proactive, and autonomous.
