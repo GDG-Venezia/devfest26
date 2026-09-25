@@ -339,3 +339,14 @@ sessions:
       In this talk, we will explore the next generation of user experiences through "agentic apps." We will discover how to elevate the UX of our applications to the next level using the power of Generative AI, AI Agents, and the tools available in the Flutter ecosystem.
 
       Get ready for a session that will change the way you think about software interaction, where we'll see how Gemini can empower your apps to be more intelligent, proactive, and autonomous.
+  - id: "non-sei-il-tuo-stack"
+    title: "Non sei il tuo stack: come far evolvere la tua carriera nel tech"
+    format: "Session"
+    lang: "ITA"
+    speakers: [rachele-bari]
+    abstract: |-
+      Cambiare tecnologia, assumere nuove responsabilità o intraprendere un percorso professionale diverso è una sfida sempre più comune nel mondo tech.
+
+      Ma come si dimostra il proprio potenziale quando si punta a un ruolo che non si è ancora ricoperto? Come si passa da Front-end a Full Stack, da Developer a Team Lead o da una tecnologia a un'altra senza dover ripartire da zero?
+
+      Parleremo di evoluzione professionale, personal branding e posizionamento nel mercato del lavoro. Approfondiremo come valorizzare le competenze trasferibili, raccontare efficacemente il proprio percorso, comunicare il proprio valore su LinkedIn e costruire una reputazione professionale capace di generare nuove opportunità di carriera.
