@@ -1,8 +1,6 @@
 ---
-# Tickets are not ready yet (~October 2026): `soon` shows a "Tickets open soon"
-# CTA pointing to /follow/ instead. Flip `enable` to true when sales open.
-enable: false
-soon: true
+# Main CTA points to the RSVP page on gdg.community.dev.
+enable: true
 title: "Tickets"
 subtitle: >
           A free ticket is required to access the DevFest. Reserve your spot now.
@@ -10,6 +8,6 @@ itemPrices:
   - description: >
                 Ticket valid for entry.
     price: DevFest Venezia 26
-    buttonTarget: "/"
+    buttonTarget: "https://gdg.community.dev/events/details/google-gdg-venezia-presents-devfest-venezia-2026/"
 
 ---
