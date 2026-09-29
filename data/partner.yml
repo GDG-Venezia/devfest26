@@ -5,9 +5,9 @@ partner:
   - name: "Università Ca' Foscari Venezia"
     image: "images/partners/unive.webp"
     link: "https://www.unive.it/"
-  - name: "Android Developers Italia"
-    image: "images/partners/adi.png"
-    link: "https://androiddevs.it/"
+  - name: "Marca User Group"
+    image: "images/partners/mug.png"
+    link: "https://marcausergroup.it/"
   # Retained for a potential future edition. Their logo files remain in static/images/partners.
   # - name: "Coding Gym"
   #   image: "images/partners/coding-gym.png"
