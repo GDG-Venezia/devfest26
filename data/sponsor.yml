@@ -37,7 +37,7 @@ tiers:
         image: "images/sponsors/galdi.png"
         link: "sponsors/galdi"
       - name: "Gottardo S.p.A."
-        image: "images/sponsors/gottardo.png"
+        image: "images/sponsors/gottardo.webp"
         link: "sponsors/gottardo"
       - name: "Körber Technologies S.p.A."
         image: "images/sponsors/koerber.png"
