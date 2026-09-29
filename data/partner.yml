@@ -8,10 +8,10 @@ partner:
   - name: "Marca User Group"
     image: "images/partners/mug.png"
     link: "https://marcausergroup.it/"
+  - name: "Coding Gym"
+    image: "images/partners/coding-gym.png"
+    link: "https://coding-gym.org/"
   # Retained for a potential future edition. Their logo files remain in static/images/partners.
-  # - name: "Coding Gym"
-  #   image: "images/partners/coding-gym.png"
-  #   link: "https://coding-gym.org/"
   # - name: "GDG Vicenza"
   #   image: "images/partners/gdgvicenza.png"
   #   link: "https://gdg.community.dev/gdg-vicenza/"
