@@ -350,3 +350,27 @@ sessions:
       Ma come si dimostra il proprio potenziale quando si punta a un ruolo che non si è ancora ricoperto? Come si passa da Front-end a Full Stack, da Developer a Team Lead o da una tecnologia a un'altra senza dover ripartire da zero?
 
       Parleremo di evoluzione professionale, personal branding e posizionamento nel mercato del lavoro. Approfondiremo come valorizzare le competenze trasferibili, raccontare efficacemente il proprio percorso, comunicare il proprio valore su LinkedIn e costruire una reputazione professionale capace di generare nuove opportunità di carriera.
+  - id: "coding-gym"
+    title: "Coding Gym"
+    format: "Workshop"
+    lang: "ENG"
+    speakers: [alessandro-pezzato]
+    abstract: |-
+      Coding Gym is a non-competitive programming lab format open to any language and developed for self-led improvement in technical and communication skills.
+  - id: "aws-iot-core-delonghi-connected-appliances"
+    title: "AWS IoT Core - De'Longhi Connected Appliances"
+    format: "Session"
+    lang: "ITA"
+    speakers: [roberto-mazzocato]
+    abstract: |-
+      Negli ultimi anni, la trasformazione digitale ha ridefinito il modo in cui interagiamo con gli elettrodomestici quotidiani, trasformandoli in sistemi intelligenti, connessi e guidati dai dati. Questa presentazione offre uno sguardo approfondito su come De'Longhi ha sfruttato le potenzialità di AWS IoT Core per progettare e gestire l'architettura cloud a supporto della sua nuova generazione di connected appliances (dalle macchine da caffè superautomatiche ai sistemi di condizionamento e riscaldamento).
+
+      Durante la sessione verranno analizzati i principali aspetti tecnici e strategici dell'implementazione:
+
+      Connettività e Sicurezza: gestione della comunicazione bidirezionale a bassa latenza e ad alta sicurezza tra dispositivi e cloud tramite protocollo MQTT e gestione delle identità con certificati X.509.
+
+      Scalabilità dell'Infrastruttura: come la natura serverless di AWS IoT Core permette di gestire milioni di messaggi giornalieri e la flotta globale di dispositivi senza sforzi di gestione dell'infrastruttura sottostante.
+
+      Integrazione dei Dati e Telemetria: elaborazione in tempo reale dei dati di utilizzo per abilitare funzionalità avanzate nell'app utente, manutenzione predittiva, aggiornamenti firmware OTA (Over-The-Air) e ottimizzazione della Customer Experience.
+
+      La presentazione si rivolge ad architetti cloud, sviluppatori IoT e decision maker interessati a capire come trasformare prodotti fisici in un ecosistema digitale scalabile e orientato al valore per l'utente finale.
