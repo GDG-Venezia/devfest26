@@ -361,7 +361,7 @@ sessions:
     title: "AWS IoT Core - De'Longhi Connected Appliances"
     format: "Session"
     lang: "ITA"
-    speakers: [roberto-mazzocato]
+    speakers: [roberto-mazzocato, pietro-bonaventura, rebecca-frisoni]
     abstract: |-
       Negli ultimi anni, la trasformazione digitale ha ridefinito il modo in cui interagiamo con gli elettrodomestici quotidiani, trasformandoli in sistemi intelligenti, connessi e guidati dai dati. Questa presentazione offre uno sguardo approfondito su come De'Longhi ha sfruttato le potenzialità di AWS IoT Core per progettare e gestire l'architettura cloud a supporto della sua nuova generazione di connected appliances (dalle macchine da caffè superautomatiche ai sistemi di condizionamento e riscaldamento).
 
