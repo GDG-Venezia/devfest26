@@ -1,23 +1,29 @@
 ---
 # Programme for /agenda/. The timetable has one column per room group (the venue
 # rooms are named like tracks); no thematic track categories. Service items
-# (keynotes, breaks, lunch) sit in the auditorium column, as scheduled.
+# (keynotes, breaks, lunch) sit in the auditorium column, as scheduled, in the
+# site blue so they don't read like the Espresso room's dark brown.
 enable: true
 date: "2026-10-24"
 timezone: "Europe/Rome"
+serviceColor: "blue"
 
-# One column per room in the timetable. color: blue | red | yellow | green | ink
+# One column per room in the timetable, in the rooms' real signage colours.
+# color takes a palette name (blue | red | yellow | green | ink) or any CSS
+# colour; dark: true marks a colour too dark for the dark home sections (they
+# use paper as its accent there, like ink).
 tracks:
   - name: "Prosecco"
-    color: "green"
+    color: "#E0BA00" # giallo
   - name: "Spritz"
-    color: "red"
+    color: "#C1362A" # rosso
   - name: "Bellini"
-    color: "blue"
+    color: "#DC8451" # pesca
+  - name: "Birra"
+    color: "#3D703A" # verde
   - name: "Espresso"
-    color: "ink"
-  - name: "Workshop"
-    color: "yellow"
+    color: "#371A19" # marrone scuro
+    dark: true
 
 sessions:
   # service: true → no talk page, no Save button.
@@ -96,7 +102,7 @@ sessions:
     start: "09:45"
     end: "11:15"
     room: "Aula Epsilon 3"
-    track: "Workshop"
+    track: "Birra"
     format: "Workshop"
     lang: "ENG"
     speakers: [israel-blancas]
@@ -256,7 +262,7 @@ sessions:
     start: "11:45"
     end: "13:20"
     room: "Aula Epsilon 3"
-    track: "Workshop"
+    track: "Birra"
     format: "Workshop"
     lang: "ENG"
     speakers: [fabian-krumbholz]
@@ -387,7 +393,7 @@ sessions:
     start: "14:30"
     end: "16:00"
     room: "Aula Epsilon 3"
-    track: "Workshop"
+    track: "Birra"
     format: "Workshop"
     lang: "ENG"
     speakers: [ankur-roy]
