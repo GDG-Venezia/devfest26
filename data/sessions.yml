@@ -541,6 +541,30 @@ sessions:
 
       E che, come si dice, "quality over quantity"!
 
+  - id: "il-futuro-dellai-non-e-solo-generativo"
+    title: "Il futuro dell’AI non è solo generativo"
+    start: "16:30"
+    end: "17:10"
+    room: "Aula Epsilon 1"
+    track: "Espresso"
+    format: "Session"
+    lang: "ITA"
+    speakers: [alessandro-dangelo]
+    abstract: |-
+      Negli ultimi anni abbiamo trasformato quasi ogni problema in un prompt.
+
+      Ma se la domanda giusta non fosse più “Quale modello AI posso utilizzare?”, bensì “Ho davvero bisogno di un modello che generi qualcosa?”
+
+      Nei sistemi reali, infatti, spesso non ci serve una risposta: ci serve una decisione.
+
+      Quale flusso avviare? Quanto è rischiosa un’operazione? Questa informazione è rilevante?
+
+      In questo talk esploreremo i decision models: modelli pensati per trasformare stato e contesto in scelte, punteggi o probabilità direttamente utilizzabili dal software, usando Jev e i System One Models come caso concreto.
+
+      Vedremo cosa cambia in termini di latenza, costi, gestione dell’incertezza e architettura, con uno sguardo anche al mondo mobile, dove performance, risorse e priorità di prodotto obbligano a pesare davvero ogni scelta.
+
+      L’obiettivo non è sostituire gli LLM, ma capire quando ha senso generare, quando decidere, quando basta una regola o uno script e quando è meglio coinvolgere un essere umano.
+
   - id: "closing-keynote"
     title: "Closing keynote"
     start: "17:10"
