@@ -1,0 +1,35 @@
+---
+# Venue maps under "Getting there" on the home page. A card opens a fullscreen viewer
+# with pinch-zoom and pan; without JavaScript the image itself opens in a new tab.
+# `thumb` is the small image shown in the card; `width`/`height` are the full image's
+# size, used to reserve space for the card image.
+enable: true
+title: "Venue maps"
+hint: "Tap a map to open it fullscreen and pinch to zoom."
+maps:
+  - title: "Campus"
+    text: "Overview of the campus."
+    image: "images/maps/campus.webp"
+    thumb: "images/maps/campus-thumb.webp"
+    alt: "Map of the campus"
+    width: 2200
+    height: 2479
+  - title: "Alfa · Ground floor"
+    image: "images/maps/alfa-ground.webp"
+    thumb: "images/maps/alfa-ground-thumb.webp"
+    alt: "Alfa building, ground floor map"
+    width: 2200
+    height: 2480
+  - title: "Alfa · Basement"
+    image: "images/maps/alfa-basement.webp"
+    thumb: "images/maps/alfa-basement-thumb.webp"
+    alt: "Alfa building, basement map"
+    width: 2200
+    height: 2026
+  - title: "Epsilon · Ground floor"
+    text: "Aule Epsilon 1–3."
+    image: "images/maps/epsilon-ground.webp"
+    thumb: "images/maps/epsilon-ground-thumb.webp"
+    alt: "Epsilon building, ground floor map"
+    width: 2200
+    height: 1288
