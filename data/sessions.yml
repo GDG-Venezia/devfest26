@@ -49,28 +49,26 @@ sessions:
       Not really. There are UIs where the user experience should be defined deterministically, or certain workflows have to be followed. AI can then change only specific UI areas dynamically to improve efficiency and customize to the user's needs. That is what we call Agentic UI.
 
       This talk breaks down the mechanics of Agentic UI. We cover existing standards like AG-UI, A2UI, and MCP Apps. We will review the essential tools and frameworks behind this evolution and hear about real-world takeaways from putting these concepts into production.
-  - id: "api-archaeology-working-with-apis-you-dont"
-    title: "API Archaeology: Working with APIs You Don’t Understand (Yet)"
+  - id: "paths-polygons-and-donuts-building-a-freehand"
+    title: "Paths, Polygons, and Donuts - Building a Freehand Drawing Tool for Maps"
     start: "09:45"
     end: "10:25"
     room: "Sala conferenze Gabriele Zanetto"
     track: "Spritz"
     format: "Session"
     lang: "ENG"
-    speakers: [matteo-valerio]
+    speakers: [istvan-juhos]
     abstract: |-
-      Most developers love building new APIs. Far fewer know how to work with existing ones, especially when documentation is missing, behavior is unclear, and the original authors are no longer around.
+      At Spoke, we build last-mile delivery tools for drivers, dispatchers, and retailers. One of our features lets drivers guide our route optimizer by grouping and ordering their stops with freehand lassoing. The first drawing tool only supported creating and undoing groups. Our users needed more control, so we built them a proper polygon editor.
 
-      This talk explores a real-world approach to “API archaeology”: the process of reconstructing, validating, and safely evolving existing APIs without full context.
+      In this talk, I'll share how finger-drags can become polygons on a map, and we'll dive into the tricky bits of editing them: self-intersecting loops, polygons with holes, and the machinery that decides which stops belong to a group. I'll cover finicky edge cases we caught, fixed, and screenshot-tested before release. There will be donuts!
 
-      We’ll cover practical techniques to:
+      By the end of the talk, you'll have a better grasp on:
 
-      - Reverse-engineer API behavior from real usage
-      - Validate assumptions through testing and observation
-      - Identify risks before making changes
-      - Introduce structure without breaking existing consumers
-
-      This is not about clean design from scratch — it’s about making sense of what’s already there.
+      - Turning freehand drawings into map polygons with Path and Path.Op
+      - How fill rules make or break boolean path operations
+      - Verifying drawing and grouping logic with screenshot tests
+      - How the same feature looks on iOS and why we stayed native for now
   - id: "parla-con-toborino-controllare-un-micro-robot-con"
     title: "Parla con Toborino: controllare un micro-robot con il linguaggio naturale"
     start: "09:45"
@@ -425,26 +423,28 @@ sessions:
       The goal isn't to convince you that AI changes everything. It's to show which engineering principles still hold, which ones need to evolve, and the practical patterns we've found useful along the way.
 
       If you're already building LLM applications - or are about to start-this talk aims to save you from having to unlearn some of those lessons the hard way.
-  - id: "paths-polygons-and-donuts-building-a-freehand"
-    title: "Paths, Polygons, and Donuts - Building a Freehand Drawing Tool for Maps"
+  - id: "api-archaeology-working-with-apis-you-dont"
+    title: "API Archaeology: Working with APIs You Don’t Understand (Yet)"
     start: "15:20"
     end: "16:00"
     room: "Sala conferenze Gabriele Zanetto"
     track: "Spritz"
     format: "Session"
     lang: "ENG"
-    speakers: [istvan-juhos]
+    speakers: [matteo-valerio]
     abstract: |-
-      At Spoke, we build last-mile delivery tools for drivers, dispatchers, and retailers. One of our features lets drivers guide our route optimizer by grouping and ordering their stops with freehand lassoing. The first drawing tool only supported creating and undoing groups. Our users needed more control, so we built them a proper polygon editor.
+      Most developers love building new APIs. Far fewer know how to work with existing ones, especially when documentation is missing, behavior is unclear, and the original authors are no longer around.
 
-      In this talk, I'll share how finger-drags can become polygons on a map, and we'll dive into the tricky bits of editing them: self-intersecting loops, polygons with holes, and the machinery that decides which stops belong to a group. I'll cover finicky edge cases we caught, fixed, and screenshot-tested before release. There will be donuts!
+      This talk explores a real-world approach to “API archaeology”: the process of reconstructing, validating, and safely evolving existing APIs without full context.
 
-      By the end of the talk, you'll have a better grasp on:
+      We’ll cover practical techniques to:
 
-      - Turning freehand drawings into map polygons with Path and Path.Op
-      - How fill rules make or break boolean path operations
-      - Verifying drawing and grouping logic with screenshot tests
-      - How the same feature looks on iOS and why we stayed native for now
+      - Reverse-engineer API behavior from real usage
+      - Validate assumptions through testing and observation
+      - Identify risks before making changes
+      - Introduce structure without breaking existing consumers
+
+      This is not about clean design from scratch — it’s about making sense of what’s already there.
   - id: "l-ia-che-usa-la-tua-app-al-posto-tuo-testing"
     title: "L'IA che usa la tua app al posto tuo: Testing Agentico su Mobile"
     start: "15:20"
