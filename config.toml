@@ -35,6 +35,13 @@ weight = 5
   logo = "images/logo.webp"
   footerDescription = "Organized by <a href=\"https://gdg.community.dev/gdg-venezia/\" target=\"BLANK\">Google Developer Group Venezia</a>."
 
+  # Offline mode: the site is saved on the device after the first visit (service worker).
+  [params.offline]
+  enable = true
+  shortName = "DevFest 26"
+  icon = "images/app-icon-512.png"
+  iconSize = "512x512"
+
   [params.location]
   title = "Location"
 
