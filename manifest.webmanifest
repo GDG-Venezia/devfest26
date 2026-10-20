@@ -1,0 +1,13 @@
+{
+  "name": "DevFest Venezia 26",
+  "short_name": "DevFest 26",
+  "description": "DevFest Venezia 2026 - 24 October - Venezia",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#101010",
+  "icons": [
+    { "src": "/images/app-icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}
