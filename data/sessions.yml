@@ -115,23 +115,31 @@ sessions:
 
       By the end of this session, you will walk away with a functional local OpenTelemetry setup and a GitHub template repository you can adapt for your own projects.
 
-  - id: "russian-dolls-of-ai-llm-rag-agents-and-how-we-know"
-    title: "Russian Dolls of AI: LLM, RAG, Agents, and How We Know They Work"
+  - id: "when-software-stops-being-deterministic-rethinking"
+    title: "When Software Stops Being Deterministic: Rethinking Engineering Practices for AI-Native Systems"
     start: "10:35"
     end: "11:15"
     room: "Auditorium Danilo Mainardi"
     track: "Prosecco"
     format: "Session"
     lang: "ENG"
-    speakers: [nejmeddine-ben-ouarred]
+    speakers: [susanna-wong]
     abstract: |-
-      LLM, RAG, agent, multi-agent system. Four terms we throw around as if they named four rival technologies. They actually name four Russian dolls: each one contains the previous one, and adds a single new piece.
+      For decades, we've built software around a simple assumption: the same input produces the same output. If behavior changes, we can usually trace it back to a code change. We write tests, review diffs, deploy to staging, and rely on CI because software is fundamentally deterministic.
 
-      We'll open them one at a time. At every level, two questions: what does this new piece make possible that wasn't before, and how do we know it's doing its job?
+      LLM systems break that assumption.
 
-      Because the answer to that second question changes completely from one level to the next, and that's usually where projects stumble.
+      As you build with language models, behavior increasingly emerges from the interaction between prompts, retrieval, context, model choice, and evaluation—not just the application code itself. Features can regress without a single line of business logic changing. A prompt tweak fixes one failure mode while introducing another. The engineering instincts that served us well for years don't disappear, but many of them stop being sufficient.
 
-      You'll leave with a map: where your own system sits, what separates it from the level below, and what to look at to check it delivers what it promises. Without necessarily needing the biggest doll.
+      This talk is about what that transition has actually looked like while building agentic systems at Typeform.
+
+      Rather than presenting a polished architecture or a success story, I'll walk through real features we're building today - including the trade-offs, dead ends, and problems we still haven't solved. Each example highlights an engineering habit I had to rethink.
+
+      I'll cover four practices that have become essential: continuous evaluation instead of relying on traditional test suites, trace-level observability instead of application logs alone, reviewing prompts and other AI artifacts as first-class engineering assets, and orchestrating systems whose components are inherently non-deterministic.
+
+      The goal isn't to convince you that AI changes everything. It's to show which engineering principles still hold, which ones need to evolve, and the practical patterns we've found useful along the way.
+
+      If you're already building LLM applications - or are about to start-this talk aims to save you from having to unlearn some of those lessons the hard way.
   - id: "close-enough-the-shortcuts-behind-systems-at-scale"
     title: "Close Enough: The Shortcuts Behind Systems at Scale"
     start: "10:35"
@@ -215,25 +223,27 @@ sessions:
       We go through AdMob formats and mediation, subscriptions with RevenueCat and the store pricing traps that cost me months, and the part most developers skip — store listings, the app website, and a bot that posts every day — because an ad unit with no users pays exactly zero.
 
       The conclusion is the uncomfortable one: monetization made my apps better. You cannot get paid by users who never come back, so the money is what forced me to fix onboarding, startup time and retention. And when you are one person with twelve apps, revenue is the only honest signal for which one deserves your next hour.
-  - id: "rust-why-how-and-when-a-real-world-case-study"
-    title: "Rust: why, how and when. A real world case study"
+  - id: "l-ia-che-usa-la-tua-app-al-posto-tuo-testing"
+    title: "L'IA che usa la tua app al posto tuo: Testing Agentico su Mobile"
     start: "11:45"
     end: "12:25"
     room: "Aula Epsilon 2"
     track: "Bellini"
     format: "Session"
     lang: "ITA"
-    speakers: [marco-biondo, leonardo-gazzola]
+    speakers: [gabriel-palmisano]
     abstract: |-
-      Rust is a systems programming language focused on building fast, reliable software by preventing memory and concurrency bugs at compile time, without a garbage collector. This makes it well-suited for performance-sensitive and resource-constrained environments like backend services, edge systems, and embedded applications.
+      Scrivere test di UI su mobile spesso significa combattere con setup complessi, selettori fragili e manutenzione continua. E se, invece di scrivere codice di test, potessi semplicemente dire all'app cosa fare?
 
-      Its core model is based on ownership and borrowing, which may feel unfamiliar at first but enables the compiler to enforce strong safety guarantees. We’ll use small examples to show how these concepts translate into practical, real-world reliability.
+      Il Testing Agentico permette a un agente IA di collegarsi a un'app in esecuzione, esplorarla come farebbe un utente reale e verificarne il comportamento seguendo istruzioni in linguaggio naturale. Non si limita a osservare lo schermo: sa anche quali elementi dell'interfaccia sono presenti, quali sono interagibili e come usarli.
 
-      Beyond the language features, the talk focuses on a practical question: when does Rust actually make sense in production? We’ll discuss where it provides clear benefits, where it may introduce friction, and how to evaluate the trade-offs for a given use case.
+      In questo talk vedremo un agente all'opera su un'app mobile reale: eseguirà tap, scroll e input, interpreterà ciò che accade sullo schermo e controllerà che il risultato sia quello atteso, utilizzando strumenti open source come Marionette MCP.
 
-      To ground the discussion, we’ll present a real-world industrial IoT scenario where Rust was used to build a data validator, highlighting the motivations and outcomes in terms of performance, stability, and operational footprint.
+      Parleremo anche dei limiti di questo approccio. Quando ha senso affidarsi a un agente? Cosa può fare meglio dei test tradizionali e cosa, invece, continuerà a richiedere assertion deterministiche e test scritti a mano?
 
-      The goal is to provide a realistic mental model for evaluating Rust as a deliberate engineering choice rather than a hype-driven decision.
+      Attraverso una demo live costruiremo un flusso di testing agentico in pochi minuti e vedremo come questa nuova classe di strumenti possa affiancare, non sostituire, la strategia di testing di un'app mobile.
+      Smetti di combattere con i test. Inizia a parlare con la tua app.
+
   - id: "aws-iot-core-delonghi-connected-appliances"
     title: "AWS IoT Core - De'Longhi Connected Appliances"
     start: "11:45"
@@ -398,31 +408,23 @@ sessions:
     abstract: |-
       The command line has been the bastion of developers and architects since the dawn of terminals in computers (so forever). A CLI usage of AI is the best compromise between the actions an AI agent can take and the inclusion of the human in the loop. In this workshop you will learn how to optimally use the Antigravity CLI and will leave you with insights on how to explore it even further.
 
-  - id: "when-software-stops-being-deterministic-rethinking"
-    title: "When Software Stops Being Deterministic: Rethinking Engineering Practices for AI-Native Systems"
+  - id: "russian-dolls-of-ai-llm-rag-agents-and-how-we-know"
+    title: "Russian Dolls of AI: LLM, RAG, Agents, and How We Know They Work"
     start: "15:20"
     end: "16:00"
     room: "Auditorium Danilo Mainardi"
     track: "Prosecco"
     format: "Session"
     lang: "ENG"
-    speakers: [susanna-wong]
+    speakers: [nejmeddine-ben-ouarred]
     abstract: |-
-      For decades, we've built software around a simple assumption: the same input produces the same output. If behavior changes, we can usually trace it back to a code change. We write tests, review diffs, deploy to staging, and rely on CI because software is fundamentally deterministic.
+      LLM, RAG, agent, multi-agent system. Four terms we throw around as if they named four rival technologies. They actually name four Russian dolls: each one contains the previous one, and adds a single new piece.
 
-      LLM systems break that assumption.
+      We'll open them one at a time. At every level, two questions: what does this new piece make possible that wasn't before, and how do we know it's doing its job?
 
-      As you build with language models, behavior increasingly emerges from the interaction between prompts, retrieval, context, model choice, and evaluation—not just the application code itself. Features can regress without a single line of business logic changing. A prompt tweak fixes one failure mode while introducing another. The engineering instincts that served us well for years don't disappear, but many of them stop being sufficient.
+      Because the answer to that second question changes completely from one level to the next, and that's usually where projects stumble.
 
-      This talk is about what that transition has actually looked like while building agentic systems at Typeform.
-
-      Rather than presenting a polished architecture or a success story, I'll walk through real features we're building today - including the trade-offs, dead ends, and problems we still haven't solved. Each example highlights an engineering habit I had to rethink.
-
-      I'll cover four practices that have become essential: continuous evaluation instead of relying on traditional test suites, trace-level observability instead of application logs alone, reviewing prompts and other AI artifacts as first-class engineering assets, and orchestrating systems whose components are inherently non-deterministic.
-
-      The goal isn't to convince you that AI changes everything. It's to show which engineering principles still hold, which ones need to evolve, and the practical patterns we've found useful along the way.
-
-      If you're already building LLM applications - or are about to start-this talk aims to save you from having to unlearn some of those lessons the hard way.
+      You'll leave with a map: where your own system sits, what separates it from the level below, and what to look at to check it delivers what it promises. Without necessarily needing the biggest doll.
   - id: "api-archaeology-working-with-apis-you-dont"
     title: "API Archaeology: Working with APIs You Don’t Understand (Yet)"
     start: "15:20"
@@ -445,27 +447,25 @@ sessions:
       - Introduce structure without breaking existing consumers
 
       This is not about clean design from scratch — it’s about making sense of what’s already there.
-  - id: "l-ia-che-usa-la-tua-app-al-posto-tuo-testing"
-    title: "L'IA che usa la tua app al posto tuo: Testing Agentico su Mobile"
+  - id: "rust-why-how-and-when-a-real-world-case-study"
+    title: "Rust: why, how and when. A real world case study"
     start: "15:20"
     end: "16:00"
     room: "Aula Epsilon 2"
     track: "Bellini"
     format: "Session"
     lang: "ITA"
-    speakers: [gabriel-palmisano]
+    speakers: [marco-biondo, leonardo-gazzola]
     abstract: |-
-      Scrivere test di UI su mobile spesso significa combattere con setup complessi, selettori fragili e manutenzione continua. E se, invece di scrivere codice di test, potessi semplicemente dire all'app cosa fare?
+      Rust is a systems programming language focused on building fast, reliable software by preventing memory and concurrency bugs at compile time, without a garbage collector. This makes it well-suited for performance-sensitive and resource-constrained environments like backend services, edge systems, and embedded applications.
 
-      Il Testing Agentico permette a un agente IA di collegarsi a un'app in esecuzione, esplorarla come farebbe un utente reale e verificarne il comportamento seguendo istruzioni in linguaggio naturale. Non si limita a osservare lo schermo: sa anche quali elementi dell'interfaccia sono presenti, quali sono interagibili e come usarli.
+      Its core model is based on ownership and borrowing, which may feel unfamiliar at first but enables the compiler to enforce strong safety guarantees. We’ll use small examples to show how these concepts translate into practical, real-world reliability.
 
-      In questo talk vedremo un agente all'opera su un'app mobile reale: eseguirà tap, scroll e input, interpreterà ciò che accade sullo schermo e controllerà che il risultato sia quello atteso, utilizzando strumenti open source come Marionette MCP.
+      Beyond the language features, the talk focuses on a practical question: when does Rust actually make sense in production? We’ll discuss where it provides clear benefits, where it may introduce friction, and how to evaluate the trade-offs for a given use case.
 
-      Parleremo anche dei limiti di questo approccio. Quando ha senso affidarsi a un agente? Cosa può fare meglio dei test tradizionali e cosa, invece, continuerà a richiedere assertion deterministiche e test scritti a mano?
+      To ground the discussion, we’ll present a real-world industrial IoT scenario where Rust was used to build a data validator, highlighting the motivations and outcomes in terms of performance, stability, and operational footprint.
 
-      Attraverso una demo live costruiremo un flusso di testing agentico in pochi minuti e vedremo come questa nuova classe di strumenti possa affiancare, non sostituire, la strategia di testing di un'app mobile.
-      Smetti di combattere con i test. Inizia a parlare con la tua app.
-
+      The goal is to provide a realistic mental model for evaluating Rust as a deliberate engineering choice rather than a hype-driven decision.
   - id: "coffee-break-afternoon"
     title: "Coffee break"
     start: "16:00"
