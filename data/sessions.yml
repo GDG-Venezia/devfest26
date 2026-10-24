@@ -283,6 +283,8 @@ sessions:
     abstract: |-
       The way we build for the web just changed: AI no longer only autocompletes code — it builds a real page, runs it in the browser, tests it, and fixes its own mistakes. In this fully hands-on session you'll experience that shift firsthand, going from a blank screen to a modern web page you designed and shipped live, all in one sitting. Whether you're a student making your first real project or a professional modernising how you work, you'll leave with something real online and a way of building you can put to use the very next day.
 
+      **Before the workshop:** time is short, so please complete the [install guide](https://devfest.krumbholz.de/workshop-prep/?format=90) in advance to avoid losing time on setup.
+
   - id: "ai-driven-community"
     title: "AI driven community"
     start: "12:35"
