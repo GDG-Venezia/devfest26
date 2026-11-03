@@ -35,6 +35,7 @@ sessions:
     service: true
 
   - id: "agentic-ui-ai-running-in-the-frontend"
+    youtube: "Cqbq786J8n0"
     title: "Agentic UI: AI running in the Frontend"
     start: "09:45"
     end: "10:25"
@@ -50,6 +51,7 @@ sessions:
 
       This talk breaks down the mechanics of Agentic UI. We cover existing standards like AG-UI, A2UI, and MCP Apps. We will review the essential tools and frameworks behind this evolution and hear about real-world takeaways from putting these concepts into production.
   - id: "paths-polygons-and-donuts-building-a-freehand"
+    youtube: "t2ino_tSxHk"
     title: "Paths, Polygons, and Donuts - Building a Freehand Drawing Tool for Maps"
     start: "09:45"
     end: "10:25"
@@ -70,6 +72,7 @@ sessions:
       - Verifying drawing and grouping logic with screenshot tests
       - How the same feature looks on iOS and why we stayed native for now
   - id: "parla-con-toborino-controllare-un-micro-robot-con"
+    youtube: "LhJiWYz2pTI"
     title: "Parla con Toborino: controllare un micro-robot con il linguaggio naturale"
     start: "09:45"
     end: "10:25"
@@ -83,6 +86,7 @@ sessions:
       In questo talk vedremo come aggiungere una nuova modalità di controllo tramite linguaggio naturale: comandi come “vai avanti lentamente”, “esplora la stanza” o “fermati se trovi un ostacolo” vengono trasformati da un LLM in azioni strutturate, validate e poi inviate al robot.
       L’obiettivo non è lasciare il controllo libero all’AI, ma usare il linguaggio naturale come interfaccia, mantenendo sicurezza, regole chiare e comportamento prevedibile.
   - id: "a-million-cars-are-talking-flink-is-listening"
+    youtube: "pc8MSHWpduU"
     title: "A Million Cars Are Talking. Flink Is Listening."
     start: "09:45"
     end: "10:25"
@@ -116,6 +120,7 @@ sessions:
       By the end of this session, you will walk away with a functional local OpenTelemetry setup and a GitHub template repository you can adapt for your own projects.
 
   - id: "when-software-stops-being-deterministic-rethinking"
+    youtube: "XwCaI8AUZiE"
     title: "When Software Stops Being Deterministic: Rethinking Engineering Practices for AI-Native Systems"
     start: "10:35"
     end: "11:15"
@@ -154,6 +159,7 @@ sessions:
 
       This talk is a beginner-friendly introduction to probabilistic data structures, built around 3 of core problems they solve — membership testing, duplicate detection, cardinality estimation, frequency estimation, nearest-neighbor search, and random projections. Rather than starting from theory, we'll start from something every developer already knows (the hash map) and build up from there, with plain-language analogies for each structure.
   - id: "neuralizzatore-android-arduino"
+    youtube: "30V-M7aFn3Y"
     title: "Costruisci il tuo Neuralizzatore: Android e Arduino per un'arma segreta"
     start: "10:35"
     end: "11:15"
@@ -172,6 +178,7 @@ sessions:
 
       *potrebbe cancellare solo parzialmente la memoria.
   - id: "non-sei-il-tuo-stack"
+    youtube: "cIcK-j6BEqA"
     title: "Non sei il tuo stack: come far evolvere la tua carriera nel tech"
     start: "10:35"
     end: "11:15"
@@ -194,6 +201,7 @@ sessions:
     service: true
 
   - id: "russian-dolls-of-ai-llm-rag-agents-and-how-we-know"
+    youtube: "ceelFN0sNfI"
     title: "Russian Dolls of AI: LLM, RAG, Agents, and How We Know They Work"
     start: "11:45"
     end: "12:25"
@@ -211,6 +219,7 @@ sessions:
 
       You'll leave with a map: where your own system sits, what separates it from the level below, and what to look at to check it delivers what it promises. Without necessarily needing the biggest doll.
   - id: "show-me-the-money"
+    youtube: "kMms7RvLNyI"
     title: "Show me the money"
     start: "11:45"
     end: "12:25"
@@ -230,6 +239,7 @@ sessions:
 
       The conclusion is the uncomfortable one: monetization made my apps better. You cannot get paid by users who never come back, so the money is what forced me to fix onboarding, startup time and retention. And when you are one person with twelve apps, revenue is the only honest signal for which one deserves your next hour.
   - id: "l-ia-che-usa-la-tua-app-al-posto-tuo-testing"
+    youtube: "PmE_ElbDYnI"
     title: "L'IA che usa la tua app al posto tuo: Testing Agentico su Mobile"
     start: "11:45"
     end: "12:25"
@@ -251,6 +261,7 @@ sessions:
       Smetti di combattere con i test. Inizia a parlare con la tua app.
 
   - id: "aws-iot-core-delonghi-connected-appliances"
+    youtube: "1-qW7A8HwwQ"
     title: "AWS IoT Core - De'Longhi Connected Appliances"
     start: "11:45"
     end: "12:25"
@@ -286,6 +297,7 @@ sessions:
       **Before the workshop:** time is short, so please complete the [install guide](https://devfest.krumbholz.de/workshop-prep/?format=90) in advance to avoid losing time on setup.
 
   - id: "ai-driven-community"
+    youtube: "njL5cnSOLRk"
     title: "AI driven community"
     start: "12:35"
     end: "13:15"
@@ -299,6 +311,7 @@ sessions:
 
       You can decied how deep we go with the tehnical details. From wiring the building unifi system with our membership and payment application, the Whatsapp bot having the possibility to turn on and setup AC, heating and light up to becomming a new member over the bot, removing membership, adding image of your face for the face detection entrance and so much more...
   - id: "a-web-for-anyone-anywhere-anytime"
+    youtube: "f215Umte6bU"
     title: "A web for anyone, anywhere, anytime"
     start: "12:35"
     end: "13:15"
@@ -312,6 +325,7 @@ sessions:
 
       In this talk, we will look at common mistakes and see solutions to improve your website for people with disabilities by using semantic HTML and ARIA attributes. We will also discuss practical examples of how to make websites more enjoyable and usable for every user.
   - id: "your-next-user-is-an-ai-agent"
+    youtube: "n_GJWTxcXcc"
     title: "Your Next User Is an AI Agent"
     start: "12:35"
     end: "13:15"
@@ -331,6 +345,7 @@ sessions:
 
       The internet remains familiar, but there is now a new type of user to take into account.
   - id: "introduction-to-cloud-computing"
+    youtube: "6OkFNb_jZ7s"
     title: "Introduction to Cloud Computing"
     start: "12:35"
     end: "13:15"
@@ -368,6 +383,7 @@ sessions:
 
       Get ready for a session that will change the way you think about software interaction, where we'll see how Gemini can empower your apps to be more intelligent, proactive, and autonomous.
   - id: "decoding-cultural-bugs-lessons-from-my-remote"
+    youtube: "PuBcrqde7P0"
     title: "Decoding cultural “bugs”: lessons from my remote Europe–India team"
     start: "14:30"
     end: "15:10"
@@ -383,6 +399,7 @@ sessions:
 
       Drawing from my experience leading a fully remote, cross-cultural IT team spanning Europe and India, I’ll show practical ways to decode “strange” behaviours, adapt team practices and improve clarity and trust without asking anyone to change who they are.
   - id: "notebooklm-come-finalmente-leggere-le-specifiche"
+    youtube: "rrXfecByplQ"
     title: "NotebookLM, come (finalmente) leggere le specifiche di progetto"
     start: "14:30"
     end: "15:10"
@@ -417,6 +434,7 @@ sessions:
       The command line has been the bastion of developers and architects since the dawn of terminals in computers (so forever). A CLI usage of AI is the best compromise between the actions an AI agent can take and the inclusion of the human in the loop. In this workshop you will learn how to optimally use the Antigravity CLI and will leave you with insights on how to explore it even further.
 
   - id: "ai-please-stop-guessing-a-k-a-chrome-devtools-mcp"
+    youtube: "wgojqHs36rE"
     title: "AI, Please Stop Guessing a.k.a. Chrome DevTools MCP"
     start: "15:20"
     end: "16:00"
@@ -428,6 +446,7 @@ sessions:
     abstract: |-
       AI is great at generating code, but terrible at understanding what’s actually happening inside your browser. We still copy-paste logs, screenshots, and half-formed thoughts into chat windows and hope for the best. Model Context Protocol (MCP) fixes this by letting AI consume real, structured context directly from Chrome DevTools. Instead of guessing, AI can see network requests, performance traces, console output, and runtime state — just like a human developer. This talk introduces MCP without the buzzwords and shows why DevTools are the perfect place for it. We’ll walk through concrete debugging and performance scenarios where MCP turns AI into a collaborative partner, not an autocomplete engine. Expect nerdy details, practical demos, and a few “why didn’t we have this earlier?” moments.
   - id: "api-archaeology-working-with-apis-you-dont"
+    youtube: "-s-M1vxwNEY"
     title: "API Archaeology: Working with APIs You Don’t Understand (Yet)"
     start: "15:20"
     end: "16:00"
@@ -450,6 +469,7 @@ sessions:
 
       This is not about clean design from scratch — it’s about making sense of what’s already there.
   - id: "rust-why-how-and-when-a-real-world-case-study"
+    youtube: "LOWsb21JgZA"
     title: "Rust: why, how and when. A real world case study"
     start: "15:20"
     end: "16:00"
@@ -475,6 +495,7 @@ sessions:
     service: true
 
   - id: "building-interoperable-agents-when-a2a-meets-mcp"
+    youtube: "9koM2YAJGIw"
     title: "Building Interoperable Agents: When A2A meets MCP"
     start: "16:30"
     end: "17:10"
@@ -501,6 +522,7 @@ sessions:
       - Google Cloud Builders Day Berlin 2026 - https://cloud.google.com/events/builders-day-berlin?hl=de
       - AI Poland 2025 - https://ai-poland.pl/speaker/2025/luiz-carneiro
   - id: "keep-your-policies-close-and-your-rules-closer"
+    youtube: "HK5EdPlADGg"
     title: "Keep your policies close, and your rules closer: evaluate your repositories without tokens"
     start: "16:30"
     end: "17:10"
@@ -516,6 +538,7 @@ sessions:
 
       Taking this idea one step further we'll explore what happens when these portable policies move closer to the application itself and enter the JVM: our rules can then call the JVM code much like an LLM calls MCP tools; but without tokens involved, and with a predictable result on every run.
   - id: "la-code-coverage-e-l-illusione-della-sicurezza"
+    youtube: "Mo0dSq4TttM"
     title: "La Code Coverage e l'illusione della sicurezza"
     start: "16:30"
     end: "17:10"
@@ -544,6 +567,7 @@ sessions:
       E che, come si dice, "quality over quantity"!
 
   - id: "il-futuro-dellai-non-e-solo-generativo"
+    youtube: "ESB7DZKEfjo"
     title: "Il futuro dell’AI non è solo generativo"
     start: "16:30"
     end: "17:10"
