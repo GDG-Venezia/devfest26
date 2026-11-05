@@ -368,6 +368,7 @@ sessions:
     service: true
 
   - id: "agentic-apps-with-gemini-and-flutter"
+    youtube: "WtIqi-68caE"
     title: "Agentic apps with Gemini and Flutter"
     start: "14:30"
     end: "15:10"
